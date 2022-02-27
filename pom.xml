@@ -11,8 +11,8 @@
 	<groupId>com.robot</groupId>
 	<artifactId>surface</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rover</name>
-	<description>Mars Rover demo</description>
+	<name>robot</name>
+	<description>Surface explorer demo</description>
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.5.31</kotlin.version>
