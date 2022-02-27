@@ -1,5 +1,3 @@
-# Info
-
 ## Description
 Remote controlled robot has been placed on surface. Write software that translate command send to robot, 
 to actions which execution allow robot to reach out target position.

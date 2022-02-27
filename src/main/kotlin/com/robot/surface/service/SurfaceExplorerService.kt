@@ -60,11 +60,11 @@ class SurfaceExplorerService {
         val rightRotationVector: Int
         val leftRotationVector: Int
         if (to > from) {
-            rightRotationVector = to.wage - from.wage
-            leftRotationVector = Direction.maxWage + from.wage - to.wage
+            rightRotationVector = to.weight - from.weight
+            leftRotationVector = Direction.maxWeight + from.weight - to.weight
         } else {
-            leftRotationVector = from.wage - to.wage
-            rightRotationVector = Direction.maxWage + to.wage - from.wage
+            leftRotationVector = from.weight - to.weight
+            rightRotationVector = Direction.maxWeight + to.weight - from.weight
         }
         return if(leftRotationVector < rightRotationVector)
             (1..leftRotationVector).map { LEFT_SIGN }

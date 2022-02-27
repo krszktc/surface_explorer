@@ -4,7 +4,7 @@ import com.robot.surface.abstraction.FourDirections
 import com.robot.surface.abstraction.NaviDirections
 import com.robot.surface.abstraction.RoundVector
 
-enum class Direction(override val wage: Int) : RoundVector, FourDirections<Direction>, NaviDirections<Direction> {
+enum class Direction(override val weight: Int) : RoundVector, FourDirections<Direction>, NaviDirections<Direction> {
 
     NORTH(1) {
         override fun front(x: Int, y: Int) = Pair(x, y + 1)
@@ -32,7 +32,7 @@ enum class Direction(override val wage: Int) : RoundVector, FourDirections<Direc
     };
 
     companion object {
-        val maxWage: Int = values().maxOf { it.wage }
+        val maxWeight: Int = values().maxOf { it.weight }
     }
 
     override fun getCoordinates(point: Pair<Int, Int>) =
